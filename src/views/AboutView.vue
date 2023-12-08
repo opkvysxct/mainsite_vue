@@ -2,6 +2,8 @@
 
 </script>
 
-<template></template>
+<template>
+	<p>about</p>
+</template>
 
 <style scoped></style>

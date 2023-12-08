@@ -2,6 +2,8 @@
 
 </script>
 
-<template></template>
+<template>
+	<p>home</p>
+</template>
 
 <style scoped></style>

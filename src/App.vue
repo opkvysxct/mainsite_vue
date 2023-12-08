@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import icon_home from "./icons/icon_home.vue"
-import icon_about from "./icons/icon_about.vue"
-import icon_links from "./icons/icon_links.vue"
+
 </script>
 
 <template>
@@ -25,7 +23,9 @@ import icon_links from "./icons/icon_links.vue"
 			<h1>VYSX</h1>
 		</div>
 	</header>
-	<RouterView />
+	<div id="routerView">
+		<RouterView />
+	</div>
 </template>
 
 <style scoped>
@@ -37,33 +37,37 @@ header {
 	justify-content: space-between;
 }
 
+#routerView {
+	margin-top: 1vh;
+}
+
 #routers {
 	display: flex;
 	align-items: center;
 	background-color: var(--dark3);
 	padding: 0.25vw;
-	border-radius: 0.25vw;
+	border-radius: 1vw;
 }
 
 .router_up {
 	transition: all 0.05s ease-out;
 	background-color: var(--dark2);
-	border-radius: 0.5vw;
+	border-radius: 0.75vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0 2vw;
+	padding: 0 3vw;
 	margin: 0 0.25vw;
 }
 
 .router_up:hover {
 	background-color: var(--dark1);
-	padding: 0 2.25vw;
+	padding: 0 3.25vw;
 }
 
 .router_up:active {
 	background-color: var(--accent1);
-	padding: 0 2vw;
+	padding: 0 3vw;
 }
 
 .router {
