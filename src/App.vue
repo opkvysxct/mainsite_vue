@@ -6,7 +6,6 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
 	<header>
 		<div>
-			<h1>VYSX</h1>
 		</div>
 		<div id="routers">
 			<div class="router_up">
@@ -20,7 +19,6 @@ import { RouterLink, RouterView } from 'vue-router'
 			</div>
 		</div>
 		<div>
-			<h1>VYSX</h1>
 		</div>
 	</header>
 	<div id="routerView">
@@ -47,6 +45,7 @@ header {
 	background-color: var(--dark3);
 	padding: 0.25vw;
 	border-radius: 1vw;
+	filter: drop-shadow(0.5vw 0.5vh 0.25vw #090909);
 }
 
 .router_up {
@@ -63,11 +62,13 @@ header {
 .router_up:hover {
 	background-color: var(--dark1);
 	padding: 0 3.25vw;
+	filter: drop-shadow(0 0 0.5rem rgb(14, 14, 14));
 }
 
 .router_up:active {
-	background-color: var(--accent1);
-	padding: 0 3vw;
+	filter: drop-shadow(0 0 0.75rem crimson);
+	background-color: crimson;
+	padding: 0 2.5vw;
 }
 
 .router {
@@ -76,5 +77,16 @@ header {
 
 h1 {
 	font-family: 'Fraunces', serif;
+}
+
+@media only screen and (max-width: 600px) {
+	.router_up {
+		margin: 1vw 1vw;
+		border-radius: 1vh;
+	}
+
+	.router {
+		margin: 1vh;
+	}
 }
 </style>

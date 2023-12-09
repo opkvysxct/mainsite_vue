@@ -1,9 +1,18 @@
 <script setup lang="ts">
-
+import Card from '@/components/Card.vue';
 </script>
 
 <template>
-	<p>home</p>
+	<div id="main">
+		<Card></Card>
+	</div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#main {
+	margin-top: 5vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+</style>
