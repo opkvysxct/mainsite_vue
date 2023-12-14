@@ -4,26 +4,42 @@
 
 <template>
 	<div id="card">
-		<img src="../../public/cards/1.png" alt="card">
-		<p>something</p>
+		<div id="img_div">
+			<img src="../../public/cards/1.png" alt="card">
+		</div>
+		<h1>Title</h1>
+		<p>Duis elit aute laborum esse officia nulla velit nisi enim irure occaecat adipisicing.</p>
 	</div>
 </template>
 
 <style scoped>
 img {
-	width: 15vw;
-	margin: 1vw;
+	object-fit: cover;
+	width: 100%;
+}
+
+#img_div {
+	display: flex;
+	overflow: hidden;
 	border-radius: 0.25vw;
+	height: 30vh;
+	width: 15vw;
+}
+
+h1 {
+	margin: 0.5vw;
 }
 
 p {
-	font-size: 1.5vw;
-	margin-bottom: 1vw;
+	margin: 0.25vw;
+	color: var(--light2);
 }
 
 #card {
-	border-radius: 0.75vw;
+	overflow: hidden;
+	border-radius: 0.5vw;
 	width: 15vw;
+	height: 35vh;
 	background-color: var(--dark2);
 	display: flex;
 	flex-direction: column;
